@@ -45,10 +45,10 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
     print(f"Server says: {response.decode()}")
 ```
 ## OUTPUT:
-Server side:
+SERVER SIDE:
 ![alt text](<Screenshot 2025-03-08 140057.png>)
 
-Client side:
+CLIENT SIDE:
 ![alt text](<Screenshot 2025-03-08 140134.png>)
 
 ## RESULT:
