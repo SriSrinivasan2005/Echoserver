@@ -20,7 +20,7 @@ Implementation using Python code
 Testing the server and client 
 
 ## PROGRAM:
-Server side:
+```Server side:
 
 import socket
 HOST, PORT = '127.0.0.1', 65432
@@ -40,7 +40,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
     client.sendall(b'srinivasan K ,24900578')
 
     response = client.recv(1024)
-    print(f"Server says: {response.decode()}")
+    print(f"Server says: {response.decode()}")'''
 ## OUTPUT:
 Server side:
 ![alt text](<Screenshot 2025-03-08 140057.png>)
