@@ -31,7 +31,8 @@ with socket.create_server((HOST, PORT)) as s:
         print(f'Connected by {addr}')
         while data := conn.recv(1024):
             conn.sendall(data)
-
+```
+```
 client side:
 
 import socket
@@ -42,8 +43,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
 
     response = client.recv(1024)
     print(f"Server says: {response.decode()}")
-'''
-
+```
 ## OUTPUT:
 Server side:
 ![alt text](<Screenshot 2025-03-08 140057.png>)
